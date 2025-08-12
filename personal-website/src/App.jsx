@@ -228,7 +228,7 @@ const projects = [
 
     {/* Resume Button */}
     <a
-      href="/Anu_Soni_Resume.pdf"
+      href="../public/ANU.docx"
       target="_blank"
       rel="noopener noreferrer"
       className="btn resume-btn"
