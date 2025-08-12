@@ -1,0 +1,89 @@
+/* Add to your CSS file */
+header .logo h1 {
+  font-size: 2rem; /* increased from default */
+  font-weight: bold;
+}
+
+header .logo div[style] {
+  font-size: 1rem !important; /* tagline bigger */
+}
+
+header .logo .mark {
+  font-size: 1.5rem;
+  padding: 0.4rem 0.6rem;
+}
+
+header {
+  padding: 1.2rem 2rem; /* a little more spacing */
+}
+.big-profile-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--muted);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.big-profile-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.code-snippet {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: fit-content;
+  max-width: 500px;
+  font-family: 'Fira Code', monospace;
+  color: #f5f5f5;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  position: relative;
+  animation: floatUp 3s ease-in-out infinite;
+}
+
+.code-snippet code {
+  color: #a0d8ff; /* keywords */
+}
+
+.code-snippet code .keyword {
+  color: #ff7ab6;
+}
+
+.code-snippet code .string {
+  color: #ffe17a;
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1em;
+  background: #00ffae;
+  margin-left: 2px;
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to { visibility: hidden; }
+}
+
+@keyframes floatUp {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
